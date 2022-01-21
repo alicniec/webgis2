@@ -44,7 +44,7 @@ require([
     }) ;
     
     map.add(fl);
-    map.add(gl)
+    view.map.add(gl)
 
 
     //Grafiki
