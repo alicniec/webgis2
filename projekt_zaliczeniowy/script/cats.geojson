@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "nazwa": "Kot Syjamski", "kraj": "Tajlandia" }, "geometry": { "type": "Point", "coordinates": [ 101.112965069907219, 16.200697290227129 ] } },
+{ "type": "Feature", "properties": { "id": 2, "nazwa": "Maine Coon", "kraj": "Stany Zjednoczone, Maine" }, "geometry": { "type": "Point", "coordinates": [ -69.162554309164733, 45.236530802060742 ] } },
+{ "type": "Feature", "properties": { "id": 3, "nazwa": "Devon Rex", "kraj": "Wielka Brytania" }, "geometry": { "type": "Point", "coordinates": [ -3.775475974215388, 50.480506176383031 ] } },
+{ "type": "Feature", "properties": { "id": 4, "nazwa": "Kot Syberyjski", "kraj": "Rosja" }, "geometry": { "type": "Point", "coordinates": [ 95.445640379843326, 60.448398953582462 ] } }
+]
+}
