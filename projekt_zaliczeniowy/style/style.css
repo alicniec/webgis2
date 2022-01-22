@@ -60,7 +60,49 @@ html{
 
 .links{
     height: 20vh;
-    background-color: red;
+    background-color: rgba(250, 250, 250, 0.897);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.links button{
+    width: 80%;
+    border: 0;
+    box-shadow: 0px 0px 15px rgb(201, 201, 201);
+}
+
+#btnZoom{
+    background-image: url("../img/syjam.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btnZoom2{
+    background-image: url("../img/mco.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btnZoom3{
+    background-image: url("../img/dvn.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btnZoom4{
+    background-image: url("../img/sybr.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #map{
@@ -70,8 +112,18 @@ html{
 .text{
     height: 40vh;
     background-color: yellow;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
+.text p{
+    font-size: 14px;
+}
+
+.desc{
+    padding: 1rem;
+}
 .footer{
     height: 20vh;
     background-color: orange;
