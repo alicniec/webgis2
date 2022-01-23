@@ -153,5 +153,15 @@ require([
     index: 2
   });
 
+  const measurement = new Measurement({
+    view: view,
+    activeTool: "distance"
+  });
+  let expandMA = new Expand({
+    view: view,
+    content: measurement,
+  });
+  view.ui.add(expandMA, "top-right");
+
 
 });
