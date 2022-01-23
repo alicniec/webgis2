@@ -10,7 +10,7 @@ require([
   "esri/widgets/Legend",
   "esri/widgets/LayerList",
   "esri/widgets/Search",
-  "esri/widgets/Measurement"
+  "esri/widgets/DistanceMeasurement2D"
 ], (
   Map,
   MapView,
@@ -23,7 +23,7 @@ require([
   Legend,
   LayerList,
   Search,
-  Measurement
+  DistanceMeasurement2D
 ) => {
   let map = new Map({
     basemap: "osm",
@@ -153,13 +153,12 @@ require([
     index: 2
   });
 
-  const measurement = new Measurement({
-    view: view,
-    activeTool: "distance"
+  let measurementWidget = new DistanceMeasurement2D({
+    view: view
   });
   let expandMA = new Expand({
     view: view,
-    content: measurement,
+    content: measurementWidget,
   });
   view.ui.add(expandMA, "top-right");
 
