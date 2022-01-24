@@ -10,7 +10,7 @@ require([
   "esri/widgets/Legend",
   "esri/widgets/LayerList",
   "esri/widgets/Search",
-  "esri/widgets/DistanceMeasurement2D"
+  "esri/widgets/DistanceMeasurement2D",
 ], (
   Map,
   MapView,
@@ -111,26 +111,25 @@ require([
   for (let btn of btnGoTo) {
     let idName = parseInt(btn.getAttribute("idName"));
     btn.addEventListener("click", () => {
-      view.popup.close()
+      view.popup.close();
       geoJSONLayer.queryFeatures().then((obj) => {
         let geo = obj.features.find((x) => x.attributes.id === idName).geometry;
-        
+
         let opts = {
           duration: 2000,
         };
 
-        view.goTo({ target: geo, zoom: 6}, opts);
-        view.popup.open({ 
+        view.goTo({ target: geo, zoom: 6 }, opts);
+        view.popup.open({
           location: geo.centroid,
-          features: [obj.features.find((x) => x.attributes.id === idName)]
-        }); 
+          features: [obj.features.find((x) => x.attributes.id === idName)],
+        });
       });
-
     });
   }
 
   let layerList = new LayerList({
-    view: view
+    view: view,
   });
 
   let expandLL = new Expand({
@@ -138,11 +137,11 @@ require([
     content: layerList,
   });
   view.ui.add(expandLL, {
-    position: "top-left"
+    position: "top-left",
   });
 
   let searchWidget = new Search({
-    view: view
+    view: view,
   });
   let expandSW = new Expand({
     view: view,
@@ -150,17 +149,15 @@ require([
   });
   view.ui.add(expandSW, {
     position: "top-left",
-    index: 2
+    index: 2,
   });
 
   let measurementWidget = new DistanceMeasurement2D({
-    view: view
+    view: view,
   });
   let expandMA = new Expand({
     view: view,
     content: measurementWidget,
   });
   view.ui.add(expandMA, "top-right");
-
-
 });
