@@ -13,7 +13,11 @@ html{
 
 .title{
     height: 10vh;
-    background-color: blueviolet;
+    background-color: rgba(255, 255, 255, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
 .main_grap{
@@ -42,13 +46,13 @@ html{
   }
   
 @keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
+    0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
 }
-40% {
+    40% {
     transform: translateY(-30px);
 }
-60% {
+    60% {
     transform: translateY(-15px);
 }
 }
@@ -115,7 +119,7 @@ html{
 }
 .text{
     height: 40vh;
-    background-color: yellow;
+    background-color: rgba(255, 255, 255, 0.719);
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -130,5 +134,9 @@ html{
 }
 .footer{
     height: 20vh;
-    background-color: orange;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(145, 145, 145); ;
 }
